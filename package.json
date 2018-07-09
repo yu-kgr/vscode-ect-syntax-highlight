@@ -1,0 +1,26 @@
+{
+    "name": "ect-highlight",
+    "displayName": "ect-highlight",
+    "description": "ect syntax highlighting.",
+    "version": "0.0.1",
+    "publisher": "yu-kgr",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ect",
+            "aliases": ["ect", "ect"],
+            "extensions": ["Ect"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ect",
+            "scopeName": "text.html.basic.ect",
+            "path": "./syntaxes/ect.tmLanguage.json"
+        }]
+    }
+}
